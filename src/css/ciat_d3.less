@@ -1,0 +1,100 @@
+@targetBarColor: #8ca3d3;
+@actualBarColor: #8bc368;
+@barHoverColor: purple;
+@lineChartColor: #4f5050;
+
+@chartBackgroundColor:white;
+@chartPrimaryTextColor: #81868f;
+@chartSecondaryTextColor: #81868f;
+
+.chart {
+  background-color: @chartBackgroundColor;
+}
+
+.chart text {
+  font-family: sans-serif;
+  font-size:8px;
+  fill: @chartSecondaryTextColor;
+}
+
+.chart rect.target_bar{
+  fill: @targetBarColor;
+}
+
+.chart rect.actual_bar{
+  fill: @actualBarColor;
+}
+
+.chart .percentage_line{
+  stroke: @lineChartColor;
+  stroke-width: 3;
+  fill: none
+}
+
+.chart .percentLine {
+  stroke: @lineChartColor;
+  stroke-width: 3;
+  fill: none
+}
+
+.chart rect.bar:hover {
+  fill: @barHoverColor;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: @chartSecondaryTextColor;
+  shape-rendering: crispEdges;
+}
+
+.yAxisRight line {
+  stroke: #777;
+  stroke-dasharray: 2,2;
+}
+
+
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: white;
+  font-size: 8px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: white;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.d3-tip-target {
+  color: @targetBarColor;
+  border: 1px solid @targetBarColor;
+}
+
+.d3-tip-actual {
+  color: @actualBarColor;
+  border: 1px solid @actualBarColor;
+}
+
+.d3-tip-line {
+  color: @lineChartColor;
+  border: 1px solid @lineChartColor;
+}
+
+
