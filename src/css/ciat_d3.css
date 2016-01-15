@@ -3,14 +3,14 @@
 }
 .chart text {
   font-family: sans-serif;
-  font-size: 8px;
+  font-size: 10px;
   fill: #81868f;
 }
 .chart rect.target_bar {
-  fill: #8ca3d3;
+  fill: #8CA2D2;
 }
 .chart rect.actual_bar {
-  fill: #8bc368;
+  fill: #8BC167;
 }
 .chart .percentage_line {
   stroke: #4f5050;
@@ -22,8 +22,11 @@
   stroke-width: 3;
   fill: none;
 }
-.chart rect.bar:hover {
-  fill: purple;
+.chart rect.target_bar:hover {
+  fill: #8298BF;
+}
+.chart rect.actual_bar:hover {
+  fill: #80AA5F;
 }
 .axis path,
 .axis line {
@@ -60,12 +63,12 @@
   left: 0;
 }
 .d3-tip-target {
-  color: #8ca3d3;
-  border: 1px solid #8ca3d3;
+  color: #8CA2D2;
+  border: 1px solid #8CA2D2;
 }
 .d3-tip-actual {
-  color: #8bc368;
-  border: 1px solid #8bc368;
+  color: #8BC167;
+  border: 1px solid #8BC167;
 }
 .d3-tip-line {
   color: #4f5050;

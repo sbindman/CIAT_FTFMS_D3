@@ -1,6 +1,8 @@
-@targetBarColor: #8ca3d3;
-@actualBarColor: #8bc368;
-@barHoverColor: purple;
+@targetBarColor: #8CA2D2;
+@targetBarHoverColor: #8298BF;
+
+@actualBarColor: #8BC167;
+@actualBarHoverColor: #80AA5F;
 @lineChartColor: #4f5050;
 
 @chartBackgroundColor:white;
@@ -13,7 +15,7 @@
 
 .chart text {
   font-family: sans-serif;
-  font-size:8px;
+  font-size:10px;
   fill: @chartSecondaryTextColor;
 }
 
@@ -37,8 +39,12 @@
   fill: none
 }
 
-.chart rect.bar:hover {
-  fill: @barHoverColor;
+.chart rect.target_bar:hover {
+  fill: @targetBarHoverColor;
+}
+
+.chart rect.actual_bar:hover {
+  fill: @actualBarHoverColor;
 }
 
 .axis path,
